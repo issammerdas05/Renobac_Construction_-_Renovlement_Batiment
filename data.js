@@ -30,6 +30,13 @@ const team = [
     bio: "Directeur Technique de Renobac, Issam supervise tous les chantiers et garantit le respect des normes de construction. Son expertise technique assure la réussite de chaque projet."
   },
   {
+    name: "Zaki Merdas",
+    role: "Chauffeur ",
+    initials: "ZM",
+    photo: "https://ui-avatars.com/api/?name=Zaki+Merdas&background=C8862A&color=fff&size=200",
+    bio: "un chauffeur professionnel et rapide qui assure la logistique de nos chantiers. Zaki est un pilier de notre équipe, garantissant que les matériaux et les équipes arrivent à temps sur les sites."
+  },
+  {
     name: "Amina Kaci",
     role: "Architecte Senior",
     initials: "AK",
