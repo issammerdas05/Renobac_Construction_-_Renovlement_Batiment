@@ -1,7 +1,7 @@
 // All content for Renobac Construction & Rénovlement Bâtiment
 const companyInfo = {
   name: "Renobac Construction & Rénovlement Bâtiment",
-  phone: "0560 32 62 77",
+  phone: "+213 560 32 62 77",
   email: "renobac1998@gmail.com",
   address: "Rue Shaboot Boualam, Alger, Algérie",
   experience: "25+ ans d'expérience"
