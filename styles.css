@@ -249,6 +249,13 @@ a { color: inherit; text-decoration: none; }
 /* STATS */
 .stats-bar { background: var(--color-navy); color: white; padding: var(--space-xl) 0; }
 
+.stats-bar .stats-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: var(--space-lg);
+  opacity: 0.85;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -257,17 +264,32 @@ a { color: inherit; text-decoration: none; }
 }
 
 .stat-item {
-  font-size: 2.5rem;
-  font-family: var(--font-heading);
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
-.stat-item span {
-  display: block;
+.stat-number {
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-label {
   font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: var(--space-xs);
+}
+
+.stat-desc {
+  display: block;
+  font-size: 0.85rem;
   font-family: var(--font-body);
   font-weight: 400;
-  margin-top: var(--space-xs);
+  opacity: 0.75;
 }
 
 /* SERVICES PREVIEW */
