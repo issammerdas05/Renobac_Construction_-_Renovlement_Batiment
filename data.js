@@ -1,4 +1,3 @@
-// All content for Renobac Construction & Rénovlement Bâtiment
 const companyInfo = {
   name: "Renobac Construction & Rénovlement Bâtiment",
   phone: "+213 560 32 62 77",
@@ -15,13 +14,6 @@ const team = [
     photo: "https://ui-avatars.com/api/?name=Abdnour+Merdas&background=C8862A&color=fff&size=200",
     bio: "Fondateur de Renobac, Abdnour dirige l'entreprise avec plus de 25 ans d'expérience dans le bâtiment et la rénovation. Il a bâti Renobac sur des valeurs de qualité, de confiance et d'excellence."
   },
-	{
-    name: "Khidarlamine Hamdi",
-    role: "Chef Programmeur",
-    initials: "KH",
-    photo: "https://ui-avatars.com/api/?name=Khidarlamine+Hamdi&background=C8862A&color=fff&size=200",
-    bio: "Chef Programmeur, Khidarlamine Hamdi est originaire de Laghouat et a étudié à l'Université Innopolis. Il supervise les solutions numériques et l'infrastructure informatique de Renobac."
-  },
 
   {
     name: "Issam Merdas",
@@ -29,6 +21,13 @@ const team = [
     initials: "IM",
     photo: "https://ui-avatars.com/api/?name=Issam+Merdas&background=C8862A&color=fff&size=200",
     bio: "Directeur Technique de Renobac, Issam supervise tous les chantiers et garantit le respect des normes de construction. Son expertise technique assure la réussite de chaque projet."
+  },
+		{
+    name: "Khidarlamine Hamdi",
+    role: "Chef Programmeur",
+    initials: "KH",
+    photo: "https://ui-avatars.com/api/?name=Khidarlamine+Hamdi&background=C8862A&color=fff&size=200",
+    bio: "Chef Programmeur, Khidarlamine Hamdi est originaire de Laghouat et a étudié à l'Université Innopolis. Il supervise les solutions numériques et l'infrastructure informatique de Renobac."
   },
   {
     name: "Zaki Merdas",
