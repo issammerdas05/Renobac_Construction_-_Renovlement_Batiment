@@ -395,3 +395,41 @@ if (faqAccordion && typeof faq !== 'undefined') {
 
 // INITIAL RENDERS
 renderProjects();
+
+// WHY CHOOSE US AUTO-SCROLL
+var whyChooseList = document.getElementById('whyChooseList');
+if (whyChooseList) {
+  var scrollInterval = 3000;
+  var isHovering = false;
+  var scrollTimer;
+  var currentIndex = 0;
+
+  whyChooseList.addEventListener('mouseenter', function() { isHovering = true; });
+  whyChooseList.addEventListener('mouseleave', function() { isHovering = false; });
+
+  var autoScrollWhyItems = function() {
+    if (isHovering) return;
+    var items = whyChooseList.querySelectorAll('li');
+    if (items.length === 0) return;
+
+    currentIndex = (currentIndex + 1) % items.length;
+    var item = items[currentIndex];
+    var containerWidth = whyChooseList.offsetWidth;
+    var itemLeft = item.offsetLeft;
+    var itemWidth = item.offsetWidth;
+
+    var scrollTo = itemLeft - (containerWidth / 2) + (itemWidth / 2);
+
+    scrollTo = Math.max(0, Math.min(scrollTo, whyChooseList.scrollWidth - containerWidth));
+
+    whyChooseList.scrollTo({ left: scrollTo, behavior: 'smooth' });
+  };
+
+  scrollTimer = setInterval(autoScrollWhyItems, scrollInterval);
+
+  // Pause on touch
+  whyChooseList.addEventListener('touchstart', function() { isHovering = true; });
+  whyChooseList.addEventListener('touchend', function() {
+    setTimeout(function() { isHovering = false; }, 3000);
+  });
+}
